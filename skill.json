@@ -1,0 +1,41 @@
+{
+  "name": "genpark-algorithmic-used-car-valuation-financing-marketplace-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Algorithmic certified used car valuation, multi-point inspection scoring, and integrated auto loan pre-approval engine.",
+  "author": "genpark",
+  "category": "automotive",
+  "tags": [
+    "used-cars",
+    "car-valuation",
+    "auto-financing",
+    "inspection-scoring",
+    "kavak"
+  ],
+  "inputs": {
+    "vin": {
+      "type": "string"
+    },
+    "mileage_km": {
+      "type": "integer"
+    },
+    "model_year": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "instant_buyout_offer_usd": {
+      "type": "number"
+    },
+    "inspection_score_240_point": {
+      "type": "number"
+    },
+    "financing_preapproval": {
+      "type": "object"
+    },
+    "certified_warranty_months": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
